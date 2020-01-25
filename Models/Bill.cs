@@ -1,12 +1,12 @@
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+using System.ComponentModel.DataAnnotations;
 
 namespace BillTracker.Models {
     public class Bill {
         public string Name { get; set; }
         public string Amount { get; set; }
+
+        [DataType(DataType.Date)]
         public DateTime DueDate { get; set; }
     }
 }
